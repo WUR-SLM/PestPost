@@ -1,0 +1,1498 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Pesticide Postprocessor V0.3 (13 Sept. 2017)"/>
+    <Property name="name" type="java.lang.String" value="frmGUI" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="tbpnlMain" min="-2" pref="784" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="btnExit" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="tbpnlMain" alignment="1" max="-2" attributes="0"/>
+                  <Component id="btnExit" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="tbpnlMain">
+      <Properties>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="pnlSelect">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Select">
+                <Property name="tabTitle" type="java.lang.String" value="Select"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="78" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnLisem" min="-2" pref="665" max="-2" attributes="0"/>
+                          <Component id="btnSingle" min="-2" pref="665" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
+                      <Component id="btnSingle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnLisem" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="411" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnSingle">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Make single run"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSingleActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnLisem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Run for Lisem data"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLisemActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlLisem">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Lisem">
+                <Property name="tabTitle" type="java.lang.String" value="Lisem"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="277" max="32767" attributes="0"/>
+                      <Component id="lblTimestep" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="txtTimestep" min="-2" pref="74" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="155" max="-2" attributes="0"/>
+                      <Component id="btnNext1" min="-2" pref="67" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblThetaInit" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblThetaSat" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblKSat" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblInfilFile" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDEM" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSurfaceStorageFile" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSurfaceVelocityFile" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSurfaceRunoffFile" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFlowDirectionFile" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDetachmentFile" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPesticideFile" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPreipitationFile" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPreipitationDataFile" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtDEM" pref="445" max="32767" attributes="0"/>
+                          <Component id="txtKSat" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtThetaSat" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtThetaInit" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtInfilFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtSurfaceStorageFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtSurfaceVelocityFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtSurfaceRunoffFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDetachmentFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtFlowDirectionFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtPrecipitationFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtPrecipitationDataFile" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtPesticideFile" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnPrecipitationDataFileBrowse" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnPesticideFileBrowse" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnPrecipitationFileBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnFlowDirectionFileBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDetachmentBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSurfaceRunoffBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSurfaceVelocityBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSurfaceBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnInfilFileBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnThetaIniBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnThetaSatBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnKSatBrowse" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDEMBrowse" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblDEM" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDEM" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDEMBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblKSat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtKSat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnKSatBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtThetaSat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblThetaSat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnThetaSatBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblThetaInit" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="txtThetaInit" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnThetaIniBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblInfilFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtInfilFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnInfilFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblSurfaceStorageFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSurfaceStorageFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSurfaceBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtSurfaceVelocityFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblSurfaceVelocityFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSurfaceVelocityBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblSurfaceRunoffFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSurfaceRunoffFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSurfaceRunoffBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtDetachmentFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDetachmentFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnDetachmentBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                              <Component id="lblFlowDirectionFile" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtFlowDirectionFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnFlowDirectionFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtPrecipitationFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnPrecipitationFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPreipitationFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtPrecipitationDataFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnPrecipitationDataFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPreipitationDataFile" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtPesticideFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnPesticideFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPesticideFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="30" max="32767" attributes="0"/>
+                              <Component id="btnNext1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtTimestep" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblTimestep" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblKSat">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Saturated conductivity"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblThetaSat">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Saturated moisture content"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblThetaInit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Initial moisture content"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtThetaSat">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtThetaInit">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnKSatBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKSatBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnThetaSatBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThetaSatBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnThetaIniBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThetaIniBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtKSat">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnNext1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNext1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblInfilFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="First infiltration file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtInfilFile">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtInfilFileActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnInfilFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInfilFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPesticideFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="File with pesticide application"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFlowDirectionFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Flow direction file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPesticideFile">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtFlowDirectionFile">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnPesticideFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPesticideFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnFlowDirectionFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFlowDirectionFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblDEM">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Elevation map"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDEM">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDEMActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnDEMBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDEMBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSurfaceStorageFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="First surf. water height file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtSurfaceStorageFile">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSurfaceBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSurfaceBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSurfaceVelocityFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="First surf. water veloc. file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSurfaceRunoffFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="First surf. water runoff file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtSurfaceRunoffFile">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtSurfaceVelocityFile">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSurfaceVelocityBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSurfaceVelocityBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSurfaceRunoffBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSurfaceRunoffBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPreipitationFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="File with precipitation"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPrecipitationFile">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnPrecipitationFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrecipitationFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPreipitationDataFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="File with precipitation data"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtPrecipitationDataFile">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnPrecipitationDataFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrecipitationDataFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTimestep">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Lisem output interval (s)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtTimestep">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDetachmentFile">
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblDetachmentFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="First sediment conc. file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnDetachmentBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDetachmentBrowseActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlOut">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Output">
+                <Property name="tabTitle" type="java.lang.String" value="Output"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="btnNext2" min="-2" pref="67" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblOutputDepths" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="chckbxDepth3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txtDepth3" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="chckbxDepth2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txtDepth2" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="chckbxDepth1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txtDepth1" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="chckbxDepth4" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="txtDepth4" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="180" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="chckbxDepth5" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="txtDepth5" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="chckbxDepth6" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="txtDepth6" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="chckbxDepth7" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="txtDepth7" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="chckbxDepth8" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="txtDepth8" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="chckbxDepth9" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="txtDepth9" min="-2" pref="112" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="chckbxDepth0" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="txtDepth0" min="-2" pref="112" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="chckbxNewArea" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lblNewArea" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblOutputDir" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblThetaFC" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblOrder" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblLosses" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblSegments" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtThetaFC" min="-2" pref="534" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btnThetaFCBrowse" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="txtOutputDir" min="-2" pref="534" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="btnOutputDirBrowse" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="txtSegmentsFile" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="txtLossesFile" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="txtOrderFile" alignment="0" pref="534" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="btnOrderFileBrowse" max="32767" attributes="0"/>
+                                                  <Component id="btnLossesFileBrowse" max="32767" attributes="0"/>
+                                                  <Component id="btnSegmentsFileBrowse" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="31" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtThetaFC" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblThetaFC" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnThetaFCBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lblOutputDir" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="txtOutputDir" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnOutputDirBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblOrder" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtOrderFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnOrderFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtLossesFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLosses" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnLossesFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblSegments" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSegmentsFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnSegmentsFileBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="67" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chckbxNewArea" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblNewArea" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="lblOutputDepths" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chckbxDepth0" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="chckbxDepth5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth0" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chckbxDepth1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="chckbxDepth6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chckbxDepth2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="chckbxDepth7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chckbxDepth3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="chckbxDepth8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chckbxDepth4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="chckbxDepth9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDepth4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnNext2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblThetaFC">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Theta at FC"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblOutputDir">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Output dir"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblOrder">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Order file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxNewArea">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="New area"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Default Cursor"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblOutputDepths">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Output depths:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth0">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Depth 1"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 2"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth1ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 3"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 4"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth3ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 5"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth4ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="20"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="5"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth0">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblNewArea">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="If you made a run for this area before, uncheck this option. It saves time using existing files."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtOrderFile">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtOutputDir">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtThetaFC">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnOrderFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOrderFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnOutputDirBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOutputDirBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnThetaFCBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnThetaFCBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnNext2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNext2ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="100"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="75"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="50"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="40"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDepth5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="30"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 10"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth9ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth8">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 9"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth8ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth7">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 8"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth7ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth6">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 7"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth6ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxDepth5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Depth 6"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chckbxDepth5ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblLosses">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Losses"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSegments">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Segments"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtLossesFile">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtSegmentsFile">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnLossesFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLossesFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSegmentsFileBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSegmentsFileBrowseActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlCore">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Core">
+                <Property name="tabTitle" type="java.lang.String" value="Core"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="chckbxSurfaceOnly" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="lblCore" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="txtCore" min="-2" pref="578" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btnCoreBrowse" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="13" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnNextCore" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblCore" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCore" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnCoreBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="chckbxSurfaceOnly" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="431" max="32767" attributes="0"/>
+                      <Component id="btnNextCore" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblCore">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Core"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtCore">
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chckbxSurfaceOnly">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Only surface contents"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnCoreBrowse">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Browse"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCoreBrowseActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnNextCore">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNextCoreActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlPesticide">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Pesticide">
+                <Property name="tabTitle" type="java.lang.String" value="Pesticide"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="706" max="32767" attributes="0"/>
+                      <Component id="btnNext3" min="-2" pref="63" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="lblDegradationCoefficient" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblDispersionCoefficient" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblRetardataionFactor" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAppliedConcentration" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblInitialConcentration" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblProfileDepth" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblTimeSteps" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblHalfTime" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtProfileDepth" max="32767" attributes="0"/>
+                          <Component id="txtInitialConcentration" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtAppliedConcentration" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtRetardationFactor" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDispersionCoefficient" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtDegradationCoefficient" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtTimeSteps" max="32767" attributes="0"/>
+                          <Component id="txtHalfTime" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblMaxCw" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMaxCs" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblInitialCellContent" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblInfiltrationFactor" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtInfiltrationFactor" pref="80" max="32767" attributes="0"/>
+                          <Component id="txtMaxCw" pref="80" max="32767" attributes="0"/>
+                          <Component id="txtMaxCs" max="32767" attributes="0"/>
+                          <Component id="txtInitialCellContent" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblProfileDepth" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtProfileDepth" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMaxCw" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMaxCw" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblInitialConcentration" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtInitialConcentration" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMaxCs" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMaxCs" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblAppliedConcentration" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtAppliedConcentration" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblInfiltrationFactor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtInfiltrationFactor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblRetardataionFactor" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtRetardationFactor" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblDispersionCoefficient" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDispersionCoefficient" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblDegradationCoefficient" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtDegradationCoefficient" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblHalfTime" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtHalfTime" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblInitialCellContent" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="txtInitialCellContent" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblTimeSteps" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTimeSteps" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="142" max="32767" attributes="0"/>
+                      <Component id="btnNext3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnNext3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNext3ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblProfileDepth">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Profile depth (cm)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtProfileDepth">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="150"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblInitialConcentration">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Initial concentration"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblAppliedConcentration">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Applied concentration"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblRetardataionFactor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Retardation factor"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblDispersionCoefficient">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dispersion coefficient"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblDegradationCoefficient">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Degradation coefficient"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDegradationCoefficient">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0.0001"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtDispersionCoefficient">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0.0001"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtRetardationFactor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0.0001"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtAppliedConcentration">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0.0001"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtInitialConcentration">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0.0001"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTimeSteps">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Time steps"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtTimeSteps">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="999"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblHalfTime">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Half time(min)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtHalfTime">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblMaxCw">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Max conc. in water"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblMaxCs">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Max conc. in soil"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtMaxCw">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtMaxCs">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblInitialCellContent">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Initial cell content (ug)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtInitialCellContent">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblInfiltrationFactor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Infiltration factor"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtInfiltrationFactor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="-1"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlSingleRun">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Single">
+                <Property name="tabTitle" type="java.lang.String" value="Single"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblTopConcentration" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblOutputSingleRun" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblWaterVelocity" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtWaterVelocity" min="-2" pref="101" max="-2" attributes="0"/>
+                          <Component id="txtTopConcentration" alignment="0" min="-2" pref="101" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="txtOutputFileSingleRun" min="-2" pref="430" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnBrowseOutputSingleRun" min="-2" pref="51" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="84" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnNext5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblWaterVelocity" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtWaterVelocity" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblTopConcentration" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtTopConcentration" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblOutputSingleRun" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtOutputFileSingleRun" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnBrowseOutputSingleRun" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="347" max="32767" attributes="0"/>
+                      <Component id="btnNext5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblWaterVelocity">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Water velocity"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTopConcentration">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="concentration at the top"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtWaterVelocity">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtTopConcentration">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblOutputSingleRun">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Output file"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtOutputFileSingleRun">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jTextField1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnBrowseOutputSingleRun">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBrowseOutputSingleRunActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnNext5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNext5ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="pnlLog">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Log">
+                <Property name="tabTitle" type="java.lang.String" value="Log"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="scrlpnLog" min="-2" pref="652" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblLog" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="scrlpnLog" pref="593" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                              <Component id="lblLog" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="scrlpnLog">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="txtLog">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="lblLog">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel1"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnExit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exit"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
